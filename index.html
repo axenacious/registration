@@ -72,6 +72,13 @@
 				}
 				
 			}
+			
+			function reset()
+			{
+					document.getElementById("name").value="";
+					document.getElementById("email").value="";
+					document.getElementById("pic").src="#";
+			}
 		</script>
 	</head>
 	<body onload="pageloaded()">
@@ -89,6 +96,7 @@
 			<br/>
 			<br/>
 			<input type="button" action="#" value="Register" onclick="register()"/>
+			<input type="button" value="Reset" onclick="reset()"/>
 		</form>
 	</body>
 <html>
