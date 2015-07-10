@@ -16,25 +16,13 @@
 				var option = 
 				{
 					quality :80,
-					destinationType:FILE_URI,
-					allowEdit:true,
-					encodingType: JPEG,
-					PictureSourceType: CAMERA
+					destinationType:  Camera.DestinationType.FILE_URI,
+					encodingType: Camera.EncodingType.JPEG,
+					sourceType: Camera.PictureSourceType.CAMERA
 				};
 				navigator.camera.getPicture(onSuccess,onFail,option);
 			}
-			function onPhoto()
-			{
-				var option = 
-				{
-					quality :80,
-					destinationType:FILE_URI,
-					allowEdit:true,
-					encodingType: JPEG,
-					PictureSourceType: PHOTOLIBRARY
-				};
-				navigator.camera.getPicture(onSuccess,onFail,option);
-			}
+			
 			function onSuccess(imageURL)
 			{
 				document.getElementById("pic").src=imageURL;
