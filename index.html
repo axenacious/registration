@@ -22,6 +22,14 @@
 				};
 				navigator.camera.getPicture(onSuccess,onFail,option);
 			}
+			function onPhoto()
+			{
+				var option = 
+				{
+					sourceType: Camera.PictureSourceType.PHOTOLIBRARY
+				};
+				navigator.camera.getPicture(onSuccess,onFail,option);
+			}
 			
 			function onSuccess(imageURL)
 			{
